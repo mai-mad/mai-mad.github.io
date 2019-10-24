@@ -1,7 +1,11 @@
+/*палитра https://colorhunt.co/palette/118585*/
 body {
     background: url("../img/bg2.jpg");
 }
 .whiteBg {
 background: #ffffff;
 
+}
+.colorRed {
+    color: #fc3c3c;
 }
