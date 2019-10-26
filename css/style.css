@@ -1,11 +1,32 @@
 /*палитра https://colorhunt.co/palette/118585*/
+
+:root{
+    --pRed: #fc3c3c;
+    --pBlueLight: #0f4471;
+    --pBlue: #083358;
+    --pWhite: #f6f6f6;
+}
+
 body {
     background: url("../img/bg2.jpg");
 }
 .whiteBg {
-background: #ffffff;
+background: var(--pWhite);
 
 }
 .colorRed {
-    color: #fc3c3c;
+    color: var(--pRed);
+}
+.colorBlue {
+    color: var(--pBlue);
+}
+h1 {
+    color: var(--pRed);
+}
+a:link,a:visited{
+    color: var(--pBlue);
+    transition: color 0.35s;
+}
+a:hover{
+    color: var(--pRed);
 }
