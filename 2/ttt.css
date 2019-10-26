@@ -1,0 +1,159 @@
+body {
+    background-color: #030303;
+}
+
+.tictactoe {
+    border: 2px solid white;
+    height: 546px;
+    width: 546px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tictactoe div {
+    width: 180px;
+    height: 180px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    font-size: 120px;
+    line-height: 180px;
+}
+
+.h1 {
+    color: white;
+    text-align: center;
+}
+
+/*fire*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #999;
+    font: 100%/18px helvetica, arial, sans-serif;
+}
+
+a {
+    color: #2fa1d6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#canvas-container {
+    height: 400px;
+    left: 330px;
+    margin: -200px 0 0 -300px;
+    position: absolute;
+    top: 50%;
+    width: 600px;
+    z-index: 2;
+}
+
+canvas {
+    cursor: crosshair;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+
+canvas:active {
+    cursor: crosshair;
+}
+
+#skyline {
+    background: url(https://jackrugile.com/lab/fireworks-v2/images/skyline.png) repeat-x 50% 0;
+    bottom: 0;
+    height: 135px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+#mountains1 {
+    background: url(https://jackrugile.com/lab/fireworks-v2/images/mountains1.png) repeat-x 40% 0;
+    bottom: 0;
+    height: 200px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+#mountains2 {
+    background: url(https://jackrugile.com/lab/fireworks-v2/images/mountains2.png) repeat-x 30% 0;
+    bottom: 0;
+    height: 250px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+#gui {
+    right: 0;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.scoreX, .score0 {
+     border: 2px dashed white;
+     height: 50px;
+     width: 200px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 50px;
+ }
+.flex {
+    display: flex;
+}
+.flex-center {
+    justify-content: center;
+}
+.X0label {
+    border-right: 2px dashed #ffffff;
+    padding: 0 10px;
+}
+.scoreX1, .score01 {
+    width: 100%;
+}
+.restart {
+    margin-top: 15px;
+}
+.pulseActive{
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1);
+    100% { transform: scale(1); }
+}
+}
+
+.pulse a{
+    width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 25px #000;
+    margin-top: 30px;
+    border: 1px solid #444;
+    text-align: center;
+    display: block;
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+}
