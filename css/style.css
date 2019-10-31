@@ -20,6 +20,12 @@ background: var(--pWhite);
 .colorBlue {
     color: var(--pBlue);
 }
+.colorBlueLight {
+    color: var(--pBlueLight);
+}
+.colorWhite {
+    color: var(--pWhite);
+}
 h1 {
     color: var(--pRed);
 }

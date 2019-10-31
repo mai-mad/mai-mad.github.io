@@ -1,0 +1,35 @@
+#result {
+    height: 80px;
+    width: 80px;
+    background: #600;
+    color: antiquewhite;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    left: -300px;
+    top: -300px;
+    box-shadow: 20px 20px 20px gray;
+
+}
+
+
+#result h6 {
+
+    position: absolute;
+    left: 235px;
+    top: 200px;
+    opacity: 0;
+}
+#againBtn {
+    position: fixed;
+    right: -300px;
+    bottom: -300px;
+    background-color:black;
+}
+#test {
+    margin-top: 40px;
+}
+#dialogHelp, #dialogHint1 {
+    display: none;
+}

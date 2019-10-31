@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Музыкальный тест</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<a href="../">website of creator</a>
+
+<div class="container">
+    <h1 class="text-center">Музыкальный тест!</h1>
+    <button id="helpBtn" type="button" class="btn btn-success float-right">Помощь</button>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="result"></div>
+
+            <form action="#" id="test">
+                <div class="form-group question">
+                    <label for="q1">1. Где родился 50 cent? <i id="hint1" class="fas fa-question-circle text-info"></i></label>
+                    <input type="text" id="q1" class="form-control"/>
+                </div>
+                <div class="form-group question">
+                    <p>2. Настоящее имя lil pump?</p>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2v1" value="ivan">
+                        <label class="form-check-label" for="q2v1">
+                            ivan
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2v2" value="Gazzi">
+                        <label class="form-check-label" for="q2v2">
+                            Gazzi
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2v3" value="Gazzy">
+                        <label class="form-check-label" for="q2v3">
+                            Gazzy
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group question">
+                    <p>3. Выбирите всех mumble rapps.</p>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="eminem" id="q3v1">
+                        <label class="form-check-label" for="q3v1">
+                            Eminem
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="lilpump" id="q3v2">
+                        <label class="form-check-label" for="q3v2">
+                            lil pump
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="21savage" id="q3v3">
+                        <label class="form-check-label" for="q3v3">
+                            21 savage
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group question">
+                    <p>4. Выбирите самый последний альбом lil pump.</p>
+                    <label for="q4">Album name</label>
+                    <select class="form-control" id="q4">
+                        <option>не выбранно</option>
+                        <option>Harverd Dropout</option>
+                        <option>issa album</option>
+                        <option>Eternal Atake</option>
+                        <option>Dex Meets Dexter</option>
+                        <option>A Love Letter to You 3</option>
+                    </select>
+                </div>
+                <div class="form-group question">
+                    <p>5. Выбирите цену за сколько trippie redd купил свою цепь.</p>
+                    <label for="q5">How much?</label>
+                    <select class="form-control" id="q5" name="q5">
+                        <option>не выбранно</option>
+                        <option>5000$</option>
+                        <option>10000$</option>
+                        <option>150000$</option>
+                        <option>225000$</option>
+                        <option>450000$</option>
+                    </select>
+                </div>
+                <div class="form-group question">
+                    <p>6. сколько машин у lil uzi vert?</p>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6v1" value="10">
+                        <label class="form-check-label" for="q6v1">
+                            10
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6v2" value="15">
+                        <label class="form-check-label" for="q6v2">
+                            15
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6v3" value="25">
+                        <label class="form-check-label" for="q6v3">
+                            25
+                        </label>
+                    </div>
+                    <div class="form-group question">
+                        <p>7. какие машины есть у lil uzi vert .</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Lamborghini" id="q7v1">
+                            <label class="form-check-label" for="q7v1">
+                                Lamborghini
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Rolls-Royce " id="q7v2">
+                            <label class="form-check-label" for="q7v2">
+                                Rolls-Royce
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Tesla" id="q7v3">
+                            <label class="form-check-label" for="q7v3">
+                                Tesla
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <p>8. Сколько лет lil pump'у ?</p>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" id="q8v1" value="10">
+                    <label class="form-check-label" for="q8v1">
+                        10
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" id="q8v2" value="15">
+                    <label class="form-check-label" for="q8v2">
+                        15
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" id="q8v3" value="18">
+                    <label class="form-check-label" for="q8v3">
+                        18
+                    </label>
+                </div>
+                <div class="form-group question">
+
+
+                    <p>9. Сколько лет lil uzi vert'у ?</p>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9v1" value="10">
+                        <label class="form-check-label" for="q9v1">
+                            10
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9v2" value="15">
+                        <label class="form-check-label" for="q9v2">
+                            15
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9v3" value="18">
+                        <label class="form-check-label" for="q9v3">
+                            18
+                        </label>
+                    </div>
+                    <div class="form-group question"><p>10. Сколько лет trippie redd'у ?</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q810v1" value="10">
+                            <label class="form-check-label" for="q810v1">
+                                10
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q810v2" value="15">
+                            <label class="form-check-label" for="q810v2">
+                                15
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q810v3" value="18">
+                            <label class="form-check-label" for="q810v3">
+                                18
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button id="finishBtn" type="button" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+<button id="againBtn" type="button" class="btn btn-primary" onclick="location.reload()">Попробовать снова</button>
+<div id="dialogHelp" title="Помощь">
+    <p>инструкия по прохождению теста на 100%</p>
+    <img width="250" src="https://i0.wp.com/sova.ponominalu.ru/wp-content/uploads/2018/10/lil-pump.jpg" alt=""/>
+</div>
+<div id="dialogHint1" title="Подсазка №1">
+    <p>50 cent родился</p>
+    <img width="250" src="https://i0.wp.com/sova.ponominalu.ru/wp-content/uploads/2018/10/lil-pump.jpg" alt=""/>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
