@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="sc.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6eaa3e5dfc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <a href="../"><i class="fas fa-hand-point-left prev"></i></a>
+
+    <h1>SIMPLE CALCULATOR</h1>
+
+    <div class="row">
+        <div class="col-md-3">
+            <form action="">
+                <div class="form-group">
+                    <label for="x">Введите X</label>
+                    <input class="form-control" type="text" id="x" aria-describedby="xHelp" placeholder=" X"/>
+                    <small id="xHelp">Первый операнд</small>
+                </div>
+                <div class="form-group">
+                    <label for="y">Введите y</label>
+                    <input class="form-control" type="text" id="y" aria-describedby="yHelp" placeholder="Y"/>
+                    <small id="yHelp">Второй операнд</small>
+                </div>
+                <div>
+                    <button class="btn btn-primary" type="button" onclick="add()">+</button>
+                    <button class="btn btn-success" type="button" onclick="sub()">-</button>
+                    <button class="btn btn-info" type="button" onclick="mul()">*</button>
+                    <button class="btn btn-warning" type="button" onclick="div()">/</button>
+
+                </div>
+                <div class="mt5">
+                    <button class="btn btn-warning" type="button" onclick="x2()">x<sup>2</sup></button>
+                    <button class="btn btn-info" type="button" onclick="xy()">x<sup>y</sup></button>
+                    <button class="btn btn-info" type="button" onclick="x3()">x<sup>3</sup></button>
+
+                </div>
+                <br/>
+
+                <!--<div>-->
+                <!--<button type="button" onmouseover="add()" onmouseout="clearResult()">+</button>-->
+                <!--<button type="button" onmouseover="sub()" onmouseout="clearResult()">-</button>-->
+                <!--<button type="button" onmouseover="mul()" onmouseout="clearResult()">*</button>-->
+                <!--<button type="button" onmouseover="div()" onmouseout="clearResult()">/</button>-->
+                <!--</div>-->
+                <div>
+                    RESULT <input type="text" id="result" readonly/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="sc.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
