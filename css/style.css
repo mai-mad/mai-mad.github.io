@@ -36,3 +36,9 @@ a:link,a:visited{
 a:hover{
     color: var(--pRed);
 }
+ol.projects {
+    list-style-type: none;
+}
+ol.projects li a {
+    margin-left: 8px;
+}
