@@ -40,5 +40,17 @@ ol.projects {
     list-style-type: none;
 }
 ol.projects li a {
-    margin-left: 8px;
+    margin-left: 30px;
+}
+li i{
+    font-size: 14px;
+    transition: font-size 0.2s,color 0.6s;
+    position: absolute;
+    margin-top: 4px;
+}
+li:hover i{
+    font-size: 18px;
+    color: var(--pBlueLight);}
+li span{
+    position: relative;
 }
