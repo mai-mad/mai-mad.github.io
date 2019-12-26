@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("wallpaper.jpg");
+    margin: 0;
+}
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.LeapYear {
+    height: 100px;
+    /*opacity: 0.5;*/
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+}
+
+.search-box {
+    width: 500px;
+    height: 80px;
+    font-size: 70px;
+    text-align: center;
+}
+button {
+    font-size: 70px;
+}
+#msg {
+    display: none;
+    font-size: 40px;
+    border: 2px solid;
+    padding: 8px;
+    background: #f1eced;
+}

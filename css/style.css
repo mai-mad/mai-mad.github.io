@@ -2,16 +2,15 @@
 
 :root{
     --pRed: #fc3c3c;
-    --pBlueLight: #0f4471;
-    --pBlue: #083358;
-    --pWhite: #f6f6f6;
+    --pBlueLight: #ff847c;
+    --pBlue: #e84a5f;
+    --pWhite: #fecea8;
 }
 
 body {
-    background: url("../img/bg2.jpg");
+    background: url("../img/cosmos.jpg");
 }
 .whiteBg {
-background: var(--pWhite);
 
 }
 .colorRed {
@@ -27,7 +26,7 @@ background: var(--pWhite);
     color: var(--pWhite);
 }
 h1 {
-    color: var(--pRed);
+    color: var(--pWhite);
 }
 a:link,a:visited{
     color: var(--pBlue);
@@ -53,4 +52,7 @@ li:hover i{
     color: var(--pBlueLight);}
 li span{
     position: relative;
+}
+p {
+    color: var(--pWhite);
 }
