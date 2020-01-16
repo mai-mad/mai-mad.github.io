@@ -1,0 +1,122 @@
+/* изучаем less
+и не только
+ */
+
+
+
+@mainColor: #ff0000;
+@textColor:#060;
+@fontSize: 50px;
+
+@myselector:.box .innerBox ul.countries .item;
+
+@import "sub1";
+@import "sub2.less";
+
+h1 {
+  color: @mainColor;
+}
+p {
+  color: @textColor;
+}
+
+.container {
+  h1 {
+    font-size: 25px;
+    color:#E45456;
+  }
+  p {
+    font-size: 25px;
+    color:#00f;
+  }
+
+  .myclass {
+    h1 {
+      font-size: 25px;
+      color:#E45456;
+    }
+    p {
+      font-size: 25px;
+      color: blueviolet;
+    }
+  }
+}
+.myclass {
+  @media screen {
+    color: blue;
+    @media (min-width: 1024px) {
+      color: green;
+    }
+  }
+  @media mytext {
+    color: black;
+  }
+}
+h1 {
+   font-size: @fontSize;
+ }
+h2 {
+  font-size: @fontSize *2;
+}
+h3 {
+  font-size: @fontSize *3;
+}
+h4 {
+  font-size: @fontSize *4;
+}
+h5 {
+  font-size: @fontSize *5;
+}
+h6 {
+  font-size: @fontSize *6;
+}
+ h1{
+  color: ~"pink";
+}
+h2 {
+  color: red;
+}
+
+.class1 {
+  .class2 {
+    .val(@param) {
+      font-size: @param;
+      color:green;
+    }
+  }
+}
+
+.choppa(@param1,@param2){
+font-size: @param1;
+  color: @param2;
+}
+
+.myclass3 {
+  .class1 > .class2 > .val(20px);
+}
+
+.myclass4 {
+  .class1 > .class2 > .val(40px);
+}
+
+.myclass5 {
+  .class1 > .class2 > .val(80px);
+}
+
+.myclass6 {
+  .choppa(10px,blue);
+}
+
+.myclass7 {
+  .choppa(20px,red);
+}
+//что нибудь
+@{myselector}{
+  background: cadetblue;
+}
+@{myselector}{
+  color: yellow;
+}
+@{myselector}:hover{
+  color: red;
+}
